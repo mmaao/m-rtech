@@ -3,7 +3,7 @@ Connecting remotely
 ###################
 
 1. Open a new terminal window
-2. Connect your pc to Robotont's network
+2. connect the user PC to ROBOTONT's network or make sure that the user PC and ROBOTONT's on-board computer are connected to the same wifi router 
 
   .. image:: /files/pictures/wifi_screen.png
     :width: 400
