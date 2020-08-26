@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="et-EE" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Roboti juhtimine &mdash; Robotont 0.0.1 dokumentatsioon</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Indeks" href="../genindex.html" />
+    <link rel="search" title="Otsing" href="../search.html" />
+    <link rel="next" title="Demod" href="demos.html" />
+    <link rel="prev" title="Andurid" href="sensors.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Robotont
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Ülevaade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Seadistamine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sensors.html">Andurid</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Roboti juhtimine</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#controlling-the-robot">ROBOTONDI juhtimine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Seadistamine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controlling-the-robot-using-teleop-twist-keyboard">Roboti juhtimine <em>teleop twist keyboardi</em> abil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#controlling-the-robot-using-an-android-device">Roboti juhtimine Android seadmega</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#controlling-the-simulated-robot">Simuleeritud roboti juhtimine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Seadistamine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Roboti juhtimine <em>teleop twist keyboardi</em> abil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Roboti juhtimine Android seadmega</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demod</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simulation.html">Simulatsioon</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Robotont</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Roboti juhtimine</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/files/control_robot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="teleoperation">
+<h1>Roboti juhtimine<a class="headerlink" href="#teleoperation" title="Püsiviit sellele pealkirjale">¶</a></h1>
+<div class="section" id="controlling-the-robot">
+<h2>ROBOTONDI juhtimine<a class="headerlink" href="#controlling-the-robot" title="Püsiviit sellele pealkirjale">¶</a></h2>
+<div class="section" id="setup">
+<h3>Seadistamine<a class="headerlink" href="#setup" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Paigalda <em>teleop twist keyboard</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt update
+sudo apt install ros-melodic-teleop-twist-keyboard
+</pre></div>
+</div>
+</li>
+<li><p class="first">Ava enda Androidi seadmes Google Play pood ning paigalda <a class="reference external" href="https://play.google.com/store/apps/details?id=com.robotca.ControlApp&amp;hl=en">ROS Control app</a>.</p>
+</li>
+<li><p class="first">Loo roboti ja arvuti vahel ssh ühendus, nagu näidatud siin: <a class="reference internal" href="setup.html#connecting-remotely"><span class="std std-ref">Connecting remotely</span></a>.</p>
+</li>
+<li><p class="first">Käivita draiver</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch robotont_driver driver_basic.launch
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="controlling-the-robot-using-teleop-twist-keyboard">
+<h3>Roboti juhtimine <em>teleop twist keyboardi</em> abil<a class="headerlink" href="#controlling-the-robot-using-teleop-twist-keyboard" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Ava uus terminali aken</p>
+</li>
+<li><p class="first">Sisesta järgnev käsk:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun teleop_twist_keyboard teleop_twist_keyboard.py __ns:<span class="o">=</span>/robotont
+</pre></div>
+</div>
+</li>
+<li><p class="first">Kasuta roboti liigutamiseks järgnevaid klahve:</p>
+<a class="reference internal image-reference" href="../_images/twist_keys.png"><img alt="../_images/twist_keys.png" src="../_images/twist_keys.png" style="width: 400px;" /></a>
+<div class="admonition warning">
+<p class="first admonition-title">Hoiatus</p>
+<p>Sellest hetkest saab klahvivajutustega panna robotit eri suundades sõitma. Kui sa peaksid kaotama roboti üle kontrolli, tee üht järgnevatest:</p>
+<ul class="last simple">
+<li>ROBOTI PEATAMISEKS VAJUTA „k“ KLAHVI!</li>
+<li>VAJUTA ROBOTIL OLEVAT PUNAST E-STOP NUPPU.</li>
+</ul>
+</div>
+<div class="admonition hint">
+<p class="first admonition-title">Vihje</p>
+<p class="last">Pane tähele, et klahvivajutused mõjuvad ainult siis kui terminaliaken on aktiivne.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Nõuanne</p>
+<p class="last">Sõlme peatamiseks kasuta <code class="code docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">C</span></code>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="controlling-the-robot-using-an-android-device">
+<h3>Roboti juhtimine Android seadmega<a class="headerlink" href="#controlling-the-robot-using-an-android-device" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Ava oma telefonis ROS Control rakendus</p>
+</li>
+<li><p class="first">Insert the ROBOTONT’s IP address into Master URI field by entering the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>http://robotont_IP_address:11311
+</pre></div>
+</div>
+</li>
+<li><p class="first">Vajuta avanenud aknal „Show advanced options“ ja täida „Joystick“ ja „Odometry“ väljad järgnevalt: „robotont/cmd_vel“ ja „robotont/odom“</p>
+</li>
+<li><p class="first">Click OK to add the robot</p>
+</li>
+<li><p class="first">Nüüd saad listist roboti valida ja seda liigutada, kasutades juhtkangi nuppu.</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="controlling-the-simulated-robot">
+<h2>Simuleeritud roboti juhtimine<a class="headerlink" href="#controlling-the-simulated-robot" title="Püsiviit sellele pealkirjale">¶</a></h2>
+<div class="section" id="id1">
+<h3>Seadistamine<a class="headerlink" href="#id1" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Paigalda <em>teleop twist keyboard</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt update
+sudo apt install ros-melodic-teleop-twist-keyboard
+</pre></div>
+</div>
+</li>
+<li><p class="first">Ava enda Androidi seadmes Google Play pood ning paigalda <a class="reference external" href="https://play.google.com/store/apps/details?id=com.robotca.ControlApp&amp;hl=en">ROS Control app</a>.</p>
+</li>
+<li><p class="first">Käivita draiver</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch robotont_driver fake_driver.launch
+</pre></div>
+</div>
+</li>
+<li><p class="first">Veendu, et <em>fixed fame</em>’iks oleks määratud „odom“!</p>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>Roboti juhtimine <em>teleop twist keyboardi</em> abil<a class="headerlink" href="#id2" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Ava uus terminali aken</p>
+</li>
+<li><p class="first">Sisesta järgnev käsk:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+</pre></div>
+</div>
+</li>
+<li><p class="first">Kasuta roboti liigutamiseks järgnevaid klahve:</p>
+<a class="reference internal image-reference" href="../_images/twist_keys.png"><img alt="../_images/twist_keys.png" src="../_images/twist_keys.png" style="width: 400px;" /></a>
+<div class="admonition hint">
+<p class="first admonition-title">Vihje</p>
+<p class="last">Pane tähele, et klahvivajutused mõjuvad ainult siis kui terminaliaken on aktiivne.</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Nõuanne</p>
+<p class="last">Sõlme peatamiseks kasuta <code class="code docutils literal notranslate"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">C</span></code>.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h3>Roboti juhtimine Android seadmega<a class="headerlink" href="#id3" title="Püsiviit sellele pealkirjale">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Ava oma telefonis ROS Control rakendus</p>
+</li>
+<li><p class="first">Sisesta enda arvuti IP aadress <em>Master URI</em> väljale</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>http://IP_address:11311
+</pre></div>
+</div>
+</li>
+<li><p class="first">Vajuta avanenud aknal „Show advanced options“ ja täida „Joystick“ ja „Odometry“ väljad järgnevalt: „robotont/cmd_vel“ ja „robotont/odom“</p>
+</li>
+<li><p class="first">Click OK to add the robot</p>
+</li>
+<li><p class="first">Nüüd saad listist roboti valida ja seda liigutada, kasutades juhtkangi nuppu.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="demos.html" class="btn btn-neutral float-right" title="Demod" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sensors.html" class="btn btn-neutral float-left" title="Andurid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Autoriõigus 2020, M
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
