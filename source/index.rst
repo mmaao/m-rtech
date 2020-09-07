@@ -7,6 +7,7 @@ Table of Contents
    :maxdepth: 2
 
    files/overview.rst
+   files/quickstart.rst
    files/setup.rst
    files/sensors.rst
    files/control_robot.rst

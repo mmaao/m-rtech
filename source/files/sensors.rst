@@ -33,3 +33,6 @@ Getting distances from objects
    .. code-block:: bash
       
       rostopic echo /scan_to_distance
+
+   .. image:: /files/pictures/terminal.png
+      :width: 400

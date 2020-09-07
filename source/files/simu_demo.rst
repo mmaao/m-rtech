@@ -1,10 +1,7 @@
-##########
-Simulation
-##########
+################
+Simulated robot
+################
 
-
-Launching the Simulation
-------------------------
 
 #. To launch the simulator and drive around: 
 

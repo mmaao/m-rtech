@@ -287,11 +287,11 @@ msgstr "Ülevaade"
 
 #: ../../files/overview.rst:6
 msgid ""
-"ClearBot’s depth camera gives the ability to see like humans and map the "
+"ROBOTONT’s depth camera gives the ability to see like humans and map the "
 "entire environment in 3D. With its omnidirectional wheels, the platform "
 "is free to move in any direction at any time. Its transparent design, "
 "extendable hardware, and open source software offer plenty of room for "
-"customized extensions. ClearBot is based on the most widely used software"
+"customized extensions. ROBOTONT is based on the most widely used software"
 " in robotics development called ROS (Robot Operating System). ROS gives "
 "open access to the latest software packages that are already used by "
 "worldwide known companies, such as, Boeing, Siemens, ABB, etc., and "
@@ -544,9 +544,8 @@ msgid "USB 3 Type-C"
 msgstr ""
 
 #: ../../files/remote_connection.rst:3 ../../files/setup.rst:25
-#, fuzzy
 msgid "Connecting remotely"
-msgstr "kaugteel robotisse sisenemine"
+msgstr "Kaugteel robotisse sisenemine"
 
 #: ../../files/remote_connection.rst:6 ../../files/setup.rst:28
 msgid ""
@@ -655,7 +654,7 @@ msgid ""
 "trying to figure out which terminal is connected to where."
 msgstr ""
 "Eduka sisselogimise korral näed, et terminali viip on muutunud "
-"järgnevaks: kasutaja@clearbot-X. Selle järgi saad teha kindlaks, kumba "
+"järgnevaks: kasutaja@clearbot-X. Selle järgi saad teha kindlaks, kumma seadme "
 "terminali sa hetkel kasutad. "
 
 #: ../../files/setup.rst:55

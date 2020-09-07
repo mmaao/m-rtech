@@ -19,5 +19,5 @@ msgstr ""
 
 #: ../../index.rst:4
 msgid "Table of Contents"
-msgstr ""
+msgstr "Sisukord"
 

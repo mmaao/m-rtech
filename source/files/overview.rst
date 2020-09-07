@@ -10,8 +10,8 @@ ROBOTONT is based on the most widely used software in robotics development calle
 ROS gives open access to the latest software packages that are already used by worldwide known companies, such as, Boeing, Siemens, ABB, etc., 
 and connects the industry with leading research institutions... 
 
-  .. image:: /files/pictures/key784.9-2.jpg
-    :width: 400
+   .. image:: /files/pictures/key784.9-2.jpg
+      :width: 400
 
 Specification
 -------------

@@ -5,8 +5,18 @@ Teleoperation
 Controlling the robot
 ---------------------
 
+   .. image:: /files/pictures/coord.png
+      :width: 400
+
+#. The robot driver subscribes to a specific type of messages called *velocity commands*. The standard name for this topic is :code:`/cmd_vel` or :code:`/robotont/cmd_vel` when in robot namespace. 
+
+#. The message is of type :code:`geometry_msgs/Twist` and it's structure can be found from `ROS wiki <https://docs.ros.org/api/geometry_msgs/html/msg/Twist.html>`__.
+
+#. To set and control the robot speed, the velocity commands need to be published continuously.
+
+
 Setup
-~~~~~
+------
 #. Install teleop twist keyboard
 
    .. code-block:: bash
@@ -26,7 +36,7 @@ Setup
 
 
 Controlling the robot using teleop twist keyboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
 
 #. Open a new terminal window
 
@@ -53,7 +63,7 @@ Controlling the robot using teleop twist keyboard
    .. tip:: Use :code:`CTRL + C` to stop the node.
 
 Controlling the robot using an Android device
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
  
 #. Open the ROS Control app on your phone
 
@@ -71,11 +81,12 @@ Controlling the robot using an Android device
 
 |
 
-Controlling the simulated robot
--------------------------------
+Controlling the simulated robot on RViz
+----------------------------------------
 
 Setup
-~~~~~
+------
+
 #. Install teleop twist keyboard
 
    .. code-block:: bash
@@ -94,7 +105,7 @@ Setup
 #. Make sure that fixed frame is set to "odom"!
 
 Controlling the robot using teleop twist keyboard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
 
 #. Open a new terminal window
 
@@ -115,7 +126,7 @@ Controlling the robot using teleop twist keyboard
 
 
 Controlling the robot using an Android device
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------
 
 #. Open the ROS Control app on your phone
 
@@ -130,3 +141,6 @@ Controlling the robot using an Android device
 #. Click OK to add the robot
 
 #. Now you can select the robot from the list and teleoperate it using the touch joystick button
+
+Controlling the simulated robot on Gazebo
+------------------------------------------
