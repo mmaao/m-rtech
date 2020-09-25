@@ -6,8 +6,8 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
 
-   files/overview.rst
-   files/setup.rst
-   files/sensors.rst
-   files/teleop.rst
-   files/demos.rst
+   source/files/overview.rst
+   source/files/setup.rst
+   source/files/sensors.rst
+   source/files/teleop.rst
+   source/files/demos.rst
