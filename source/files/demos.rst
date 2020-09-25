@@ -4,5 +4,5 @@ Demos
 #####
 
 .. toctree::
-   robot_demo.rst
-   simu_demo.rst
+   demo_robot.rst
+   demo_gazebo.rst

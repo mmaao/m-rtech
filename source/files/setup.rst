@@ -5,6 +5,5 @@ Setup
 
 .. toctree::
 
-  robotonlysetup.rst
-  robotpcsetup.rst
-  pconlysetup.rst
+  setup_robot_pc.rst
+  setup_pc_only.rst

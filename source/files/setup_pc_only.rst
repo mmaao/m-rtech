@@ -1,5 +1,5 @@
 ##############################
-Using the simulated robot only
+Using only the simulated robot
 ##############################
 
 Installing Ubuntu
@@ -19,10 +19,10 @@ Creating a catkin workspace
 
 Create a workspace for catkin as shown `here <http://wiki.ros.org/catkin/Tutorials/create_a_workspace>`__.
 
-Cloning RBOTONT's packages
---------------------------
+Cloning Robotont's packages
+-----------------------------
 
-All ROBOTONT's packages can be accessed from `ROBOTONT's GitHub <https://github.com/robotont>`__.
+All Robotont's packages can be accessed from `Robotont's GitHub <https://github.com/robotont>`__.
 
 To clone the packages:
 
@@ -38,8 +38,8 @@ Building the catkin workspace
     cd catkin_ws
     catkin build
 
-Source the workspace
---------------------
+Sourcing the workspace
+-----------------------
 
 Make the workspace visible to ROS (must be done for every new terminal)
 
