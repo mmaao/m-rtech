@@ -1,0 +1,3 @@
+[submodule "robotont_description"]
+	path = robotont_description
+	url = https://github.com/robotont/robotont_description.git
